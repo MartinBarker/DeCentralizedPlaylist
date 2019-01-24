@@ -1,0 +1,75 @@
+-- Merging decision tree log ---
+manifest
+ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:2:1-35:12
+	package
+		ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:3:5-51
+		INJECTED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml
+		INJECTED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml
+		INJECTED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml
+		INJECTED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml
+uses-sdk
+ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:7:5-9:41
+	android:targetSdkVersion
+		ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml
+		INJECTED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:8:9-34
+		INJECTED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml
+		INJECTED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml
+application
+ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:11:5-33:19
+	android:label
+		ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:14:9-41
+	android:icon
+		ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:13:9-45
+	android:allowBackup
+		ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:15:9-40
+activity#com.seven.notificationlistenerdemo.MainActivity
+ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:16:9-24:20
+	android:label
+		ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:18:13-45
+	android:name
+		ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:17:13-75
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:19:13-23:29
+action#android.intent.action.MAIN
+ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:22:27-74
+service#com.seven.notificationlistenerdemo.NotificationMonitor
+ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:26:9-32:19
+	android:permission
+		ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:28:13-87
+	android:name
+		ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:27:13-82
+intent-filter#action:name:android.service.notification.NotificationListenerService
+ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:29:13-31:29
+action#android.service.notification.NotificationListenerService
+ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:30:17-99
+	android:name
+		ADDED from H:\Downloads\NotificationListenerService-Example-master\NotificationListenerServiceDemo-master\app\src\main\AndroidManifest.xml:30:25-96
