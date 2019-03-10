@@ -180,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
         while ((System.nanoTime()-startTime)< 2*60*NANOSEC_PER_SEC){
             Log.i("myTag", "loop");
 
-            //mc.getMediaMetadata();
+            mc.getMediaMetadata();
 
         }
         Log.i("myTag", "end of startTrackingMusic()");
