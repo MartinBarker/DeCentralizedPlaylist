@@ -3,8 +3,8 @@
 
 
     <head>
-        <title>Tag Assistant</title>
-        <script src="popup.js"></script>
+        <title>DeCentralized Playlist</title>
+        <script src="popout.js"></script>
         <script src="jquery.js"></script>
         <link rel="stylesheet" href="popup.css">
     </head>
@@ -12,16 +12,13 @@
     <body style="width:260px;height:160px;">
         <div id="Main">
 
-            <button id="beginCollection">Begin data collection for this current tab.</button>
+            <button id="stopCollectingData">Stop data collection for this current tab.</button>
             
             <h3 id="resultsTitle">Songs Collected:</h3>
             <div id="results"></div>
 
             <br> <br>
             <button id="sendPostButton">Start Post Request to Server</button>
-
-            
-                
 
         </div>
     </body>
