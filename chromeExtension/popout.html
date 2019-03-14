@@ -14,11 +14,21 @@
 
             <button id="stopCollectingData">Stop data collection for this current tab.</button>
             
+            <h3>Collecting data from tab with title:</h3>
+            <div id="currentTargetTabTitle"></div>
+
             <h3 id="resultsTitle">Songs Collected:</h3>
             <div id="results"></div>
 
             <br> <br>
             <button id="sendPostButton">Start Post Request to Server</button>
+            <br><br>
+            <div>Analysis: </div>
+            <select>
+                <option value="MostListenedToSong">Most Listened To Song</option>
+                <option value="MostActiveListeningTimes">Most Active Listening Times</option>
+              </select>
+            <button id="generateAnalysis">Generate</button>
 
         </div>
     </body>

@@ -1,48 +1,40 @@
-//on popup load
+//once popup window is fully loaded
 window.onload = function(){
-    console.log('window1 fully loaded');
-    var startCollection = document.getElementById("beginCollection");
+    //initialize and store stopCollecting variable
+    chrome.storage.sync.set({ "stopCollecting": "False" }, function(){ }); 
     
-    console.log('startCollection element exists ');
-    if(startCollection){
+    var startCollection = document.getElementById("beginCollection");
+    if(startCollection){ //startCollection element exists
 
-        /*
-        //check the isCollectionEnabled value and update checkbox accordingly
-        chrome.storage.sync.get(["isCollectionEnabled"], function(items){
-            console.log("retreiving isCollectionEnabled value:");
-            console.log(items);
-            if(items=="True"){
-                //check the box
-                enableCheckbox.checked = true;
-            }else if(items=="False"){
-                //uncheck box
-                enableCheckbox.checked = false;
-            }
-        });
-       
-*/
         //listen for if startCollection is clicked
         startCollection.addEventListener("click", function(){
-            console.log('startCollection clicked ');
+
+            //initialize and store historyArr variable
+            var historyArr = [];
+            historyArr[0] = 'martinbarker1'; //username
+            //var song1 = ["song1demo DateTime", "song1demo Title"];
+            //historyArr[1] = song1;
+            chrome.storage.sync.set({ "historyArr": historyArr }, function(){ }); 
+
+
+            //confirm that historyArr was stored
+            /*
+            chrome.storage.sync.get(["historyArr"], function(items){
+                console.log("historyArr value:");
+                console.log(items);
+            });
+            */
 
             //sets targetTabID in sync storage
-            getTargetTabInfo();        
-            
-            //initialize songs array
-            var listeningDataArr = [[ [], [], [], [] ]];
- 
-            //create array
-            var historyArr = new Array(50);
-            for(var i=0;i<=51;i++){
-	            historyArr[i]=new Array(4);
-            }
-
-            listeningDataArr[1][0] = "song1 title";
-            listeningDataArr[1][1] = "song1 listening DateTime ";
-            listeningDataArr[1][2] = "song1 source";
-            listeningDataArr[1][3] = "song 1 device";
-
-            chrome.storage.sync.set({ "listeningDataArr": listeningDataArr }, function(){ }); 
+            storeTargetTabInfo();        
+        
+            //confirm that targetTabID is stored 
+            /*
+            chrome.storage.sync.get(["targetTabID"], function(items){
+                console.log("after calling storeTargetTabInfo, targetTabID value:");
+                console.log(items);
+            });
+            */
 
             //open popout
             var popupWindow = window.open(
@@ -54,26 +46,34 @@ window.onload = function(){
         });
     }
 
+    /*
+    //listener for if sendPostButton is clicked
     document.getElementById("sendPostButton").addEventListener("click", function(){
         console.log("sendPostbutton clicked");
-        injectJqueryInTab();
-        console.log("jquery should be loaded");
 
+        //inject jquery in tab to confirm it is loaded
+        injectJqueryInTab();
+        //console.log("jquery should be loaded");
+
+        //demo jsonData
         var jsonData2 = {"Username":"martinbarker1",
         "Song1":{"Title":"Norway","Artist":"Beach House","Album":"Teen Dream","DateTime":"2019-3-9 13:17:17","Source":"blackplayer","Device":"androidPhone1"},
         "Song2":{"Title":"Golden Symmetry","Artist":"Von Haze","Album":"Kar Dee Akk Ake","DateTime":"2019-3-10 13:17:17","Source":"spotify","Device":"browser1"}
-      };
-        makeCorsRequest(jsonData2);
+        };
+
+        //make http post request with jsonData
+        //makeCorsRequest(jsonData2);
 
         console.log("end of sendPostbutton being clicked");
     });
+    */
 }
 
-function getTargetTabInfo(){
+function storeTargetTabInfo(){
 
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-        console.log('popup: tabs = ');
-        console.log(tabs);
+        //console.log('popup: tabs = ');
+        //console.log(tabs);
         
         var tab = tabs[0];
         //console.log("popup tab[0] = ");
@@ -81,13 +81,13 @@ function getTargetTabInfo(){
         var title = tab.title;
         var targetTabID = tab.id;
         
-        console.log("targetTabID = " + targetTabID );
+        console.log("storeTargetTabInfo() targetTabID = " + targetTabID );
         console.log("targetTabTitle = " + title);
         //document.getElementById("results").innerText = title;
         chrome.storage.sync.set({ "targetTabID": targetTabID }, function(){ }); 
         
         chrome.storage.sync.get(["targetTabID"], function(items){
-            console.log("retreiving targetTabID value:");
+            console.log("retreiving stored targetTabID value:");
             console.log(items);
         });
         
