@@ -40,7 +40,7 @@ window.onload = function(){
             var popupWindow = window.open(
                 chrome.extension.getURL("popout.html"),
                 "exampleName",
-                "width=400,height=400"
+                "width=600,height=400"
             );
             
         });

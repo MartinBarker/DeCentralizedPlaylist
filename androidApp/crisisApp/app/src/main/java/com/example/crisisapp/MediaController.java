@@ -10,7 +10,9 @@ import android.os.Bundle;
 
 import java.util.List;
 
-public class MediaController extends android.media.MediaMetadata{
+public class MediaController{
+
+}/* extends android.media.MediaMetadata{
 
     MediaController(Bundle bundle) {
         super(bundle);
@@ -28,3 +30,4 @@ public class MediaController extends android.media.MediaMetadata{
     }
 
 }
+*/
