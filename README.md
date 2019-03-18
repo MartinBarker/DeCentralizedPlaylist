@@ -11,4 +11,8 @@ Maintain a playlist of your listening history accross multiple devices (mobile /
 - Chrome extension: Catch, store, and send listening data from any audio source for a desired tab.
 - MySQL server: Receive and store listening data, improve fields by calling DiscogsAPI to gather additional information, serve up analysis to the user.
 
-![alt text](https://i.imgur.com/aUXX0In.jpg)
+## Topology:
+![topology](https://i.imgur.com/2pLCnHL.jpg)
+
+## Chrome Extension UI (WIP):
+![topology](https://i.imgur.com/8j103aW.jpg)
